@@ -1,0 +1,48 @@
+#container {
+    position: fixed;
+    z-index: 9999;
+    top: 5px;
+    left: 5px;
+  }
+  
+  canvas {
+    position: absolute;
+    height: 100vh;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+  }
+
+
+.title {
+    animation: fadeIn 10s ease 0s 1 normal forwards;
+    position: relative;
+    font-family: "mono45-headline",sans-serif;
+    /* left: -100%; */
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        scale:0.1
+    }
+    20% {
+        opacity: 0.5;
+        scale:0.7
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#controls{
+    border-radius: 15%;
+    color: azure;
+    /* border: 1px black solid; */
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+}
+
+#line-button:active{
+    color: darkgray;
+}
